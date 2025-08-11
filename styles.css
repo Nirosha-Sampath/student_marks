@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(20, 25, 35, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #247e60 0%, #52b4b8 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.title {
+    color: rgb(236, 229, 253);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(30, 35, 50, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+}
+
+select option {
+    background: #1e2332;
+    color: white;
+}
+
+.student-list {
+    margin-bottom: 30px;
+}
+
+.student-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.student-item:last-child {
+    border-bottom: none;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.student-number {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 40px;
+}
+
+.student-name {
+    color: rgb(182, 182, 253);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.marks-input {
+    background: rgba(50, 60, 80, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: white;
+    font-size: 14px;
+    width: 80px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.marks-input:hover {
+    background: rgba(70, 80, 100, 0.8);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.marks-input:focus {
+    background: rgba(70, 80, 100, 0.9);
+    border-color: #4facfe;
+    box-shadow: 0 0 0 2px rgba(79, 172, 254, 0.2);
+}
+
+.marks-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.btn-next {
+    background: linear-gradient(45deg, #00d4aa, #00d4aa);
+    color: white;
+}
+
+.btn-next:hover:not(:disabled) {
+    background: linear-gradient(45deg, #00b894, #00b894);
+    transform: translateY(-2px);
+}
+
+.btn-next:disabled {
+    background: rgba(80, 90, 110, 0.5);
+    color: rgba(255, 255, 255, 0.4);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-back {
+    background: rgba(50, 60, 80, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn-back:hover {
+    background: rgba(70, 80, 100, 0.8);
+    transform: translateY(-2px);
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+    transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+    background: rgba(80, 90, 110, 0.5);
+    color: rgba(255, 255, 255, 0.4);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    text-align: left;
+    text-indent: 22px;
+    margin-bottom: 42px;
+}
+
+#message {
+    display: none;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-style: italic;
+    color: black;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Collection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Subject Selection Screen -->
+    <div class=" container" id="subjectSelection">
+        <div class="header">
+            <div class="icon">📚</div>
+            <div>
+                <div class="title">Mid-Year Term Test - 2025</div>
+            </div>
+        </div>
+        <div class="subtitle">Exam results</div>
+
+
+        <div class="form-group">
+            <label for="subjectSelect">Select the Subject</label>
+            <select id="subjectSelect" name="Subject">
+                <option value="">Select Subject</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="history">History</option>
+                <option value="geography">Geography</option>
+            </select>
+        </div>
+
+
+        <div class="button-group">
+            <button class="btn btn-next" onclick="showGradeSelection()">Next</button>
+        </div>
+
+
+    </div>
+
+    <!-- Grade 01 Marks Collection -->
+    <div class="container hidden" id="grade01">
+        <div class="header">
+            <div class="icon">📊</div>
+            <div>
+                <div class="title">Student Marks Collection</div>
+            </div>
+        </div>
+        <div class="subtitle">Grade 01 marks</div>
+
+        <div class="student-list">
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">කළු/30/1-01</span>
+                    <span class="student-name">තුඩුගල ධම්මරුචි හිමි</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade01()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">කළු/30/1-02</span>
+                    <span class="student-name">නෙළුවේ සුමනරතන හිමි </span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade01()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">කළු/30/1-03</span>
+                    <span class="student-name">මරදංකඩවල ධම්මාලංකාර හිමි</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade01()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">කළු/30/1-04</span>
+                    <span class="student-name">Sudhira Nuwan Tharanga</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade01()">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-back" onclick="showSubjectSelection()">Back</button>
+            <button class="btn btn-next" id="grade01NextBtn" onclick="showGrade02()" disabled>Next</button>
+        </div>
+    </div>
+
+    <!-- Grade 02 Marks Collection -->
+    <div class="container hidden" id="grade02">
+        <div class="header">
+            <div class="icon">📚</div>
+            <div>
+                <div class="title">Student Marks Collection</div>
+            </div>
+        </div>
+        <div class="subtitle">Grade 02 marks</div>
+
+
+        <div class="student-list">
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-01</span>
+                    <span class="student-name">තුඩුගල ධම්මරුචි හිමි</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-02</span>
+                    <span class="student-name">Amal Jewan</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-03</span>
+                    <span class="student-name">Thusita Janath</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-04</span>
+                    <span class="student-name">Ramesh Chaturanga</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-05</span>
+                    <span class="student-name">Akila Isuru</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-06</span>
+                    <span class="student-name">Iduwara Akalanka</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-07</span>
+                    <span class="student-name">Chandana Kumara</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+            <div class="student-item">
+                <div class="student-info">
+                    <span class="student-number">2-08</span>
+                    <span class="student-name">Sarat Kulasekara</span>
+                </div>
+                <input type="number" class="marks-input" min="-1" max="100" placeholder="Marks"
+                    oninput="validateGrade02()">
+            </div>
+        </div>
+
+
+        <div class="button-group">
+            <button class="btn btn-back" onclick="showGrade01()">Back</button>
+            <button class="btn btn-next" id="grade02NextBtn" onclick="showSubmitMarks()" disabled>Next</button>
+        </div>
+    </div>
+
+    <!-- Submit Marks -->
+    <div class="container hidden" id="submitMarks">
+        <div class="header">
+            <div class="icon">📊</div>
+            <div>
+                <div class="title">Student Marks Collection</div>
+            </div>
+        </div>
+        <div class="subtitle">Submit marks</div>
+
+
+        <div>
+            <p>If you entered the students' marks correctly, you can now submit those marks. </p>
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-back" onclick="showGrade02()">Back</button>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <button class="btn btn-submit" id="submitBtn" onclick="submitMarks()">
+                📤 Submit Marks
+            </button>
+        </div>
+
+        <form id="form" class="container m-4 pl-4">
+            <button class="button is-primary" type="submit" id="submit-button">
+                Sign Up
+            </button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+
+
+    <!-- Submitted -->
+    <div class="container hidden" id="submitted">
+        <div class="header">
+            <div class="icon">📊</div>
+            <div>
+                <div class="title">Student Marks Collection</div>
+            </div>
+        </div>
+        <div class="subtitle">Submission completed.</div>
+
+
+        <div>
+            <p>Your response was successfully recorded.</p>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="grade01.js"></script>
+    <script src="grade02.js"></script>
+    <script src="grade12.js"></script>
+    <script src="submit_data.js"></script>
+</body>
+
+</html>
