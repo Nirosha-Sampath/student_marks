@@ -11,14 +11,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 20px;
 }
 
 .container {
     background: rgba(20, 25, 35, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    padding: 20px;
+    padding: 40px;
     width: 100%;
     max-width: 500px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -94,17 +94,24 @@ select option {
     margin-bottom: 30px;
 }
 
+
+.student-item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .student-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.student-item:last-child {
-    border-bottom: none;
-}
+
+
+
 
 .student-info {
     display: flex;
@@ -123,6 +130,7 @@ select option {
     color: rgb(182, 182, 253);
     font-size: 16px;
     font-weight: 400;
+    padding-top: 8px;
 }
 
 .marks-input {
@@ -256,6 +264,4 @@ p {
     border-radius: 4px;
     font-style: italic;
     color: black;
-
 }
-
