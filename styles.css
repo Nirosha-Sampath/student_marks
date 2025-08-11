@@ -128,7 +128,7 @@ select option {
 
 .student-name {
     color: rgb(182, 182, 253);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding-top: 8px;
 }
@@ -265,3 +265,4 @@ p {
     font-style: italic;
     color: black;
 }
+
